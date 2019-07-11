@@ -1,0 +1,43 @@
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: white;
+  width: 512px;
+  height: 512px;
+  background-size: 128px 128px;
+  margin: auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3) 50%, transparent 50%, transparent), linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 50%, transparent 50%, transparent), linear-gradient(to bottom, transparent 0%, transparent 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(to bottom, white 50%, transparent 50%, transparent), linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.5) 50%), none;
+  filter: invert(100%); }
+
+.pawnwhite, .kingwhite, .queenwhite, .bishopwhite, .rookwhite, .knightwhite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  color: white;
+  cursor: pointer;
+  filter: invert(100%); }
+
+.pawnblack, .kingblack, .queenblack, .bishopblack, .rookblack, .knightblack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  color: black;
+  cursor: pointer;
+  filter: invert(100%); }
+
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  cursor: pointer; }
+
+#turn {
+  display: flex;
+  justify-content: center; }

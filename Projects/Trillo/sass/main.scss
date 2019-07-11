@@ -1,0 +1,158 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-size: 12px;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right:10px;
+    #logo{
+        margin-right: auto;
+    }
+    img{
+        margin:10px;
+    }
+    #user {
+        border-radius: 50%;
+    }
+    p { 
+        color:#777;
+    }
+}
+
+.menu{
+    display:flex;
+    justify-content: space-evenly;
+    .sub{
+        padding: 5px;
+        text-align: center;
+        background: #333;
+        color: white;
+        width:25%;
+    }
+}
+
+.img{
+    display:flex;
+    img{
+        width:100%;
+        height:auto;
+    }
+}
+
+.comment {
+    background: #faf9f9;
+    padding: 30px 30px 0px 30px;
+    div{
+        background: white;
+        margin-bottom: 40px;
+        padding: 16px 16px 0px 16px;
+        ul{
+            //list-style-type:none;
+            display:flex;
+            flex-wrap:nowrap;
+            justify-content:space-between;
+            margin-bottom: -21px;
+            li{
+                margin: 9px;
+            }
+        }
+        .low{
+            display:flex;
+            justify-content: flex-end;
+            align-content: center;
+            h5{
+                font-size:10px;
+                margin-right:auto;
+                color:#999;
+            }
+            .persons{
+                padding:0px;
+                display:flex;
+                img{
+                    margin:-7px;
+                }
+            }   
+        }
+        p{
+            margin-bottom:20px;
+        }
+        img{
+            border: 3px solid white;
+            border-radius: 50%;
+        }
+        .owner{
+            display:flex;
+            justify-content: flex-end;
+            align-content: center;
+            .sign{
+                margin-right: auto;
+            }
+            .score{
+                
+                p{
+                    margin-top: 3px;
+                    font-size: 25px;
+                }
+            }
+                h5{
+                margin-top:8px;
+                font-size: 10px;
+                color:#999;
+            }
+        }
+    }
+}
+
+footer{
+    .ThatAmountOfDivsInOneIndexIsLiterallyKillingMyCreativeThinking{
+        display:flex;
+        justify-content:center;
+        
+        .news{
+            p{
+                font-size:20px;
+            }
+        }
+    }
+    .button{
+        display:flex;
+        justify-content:center;
+        .book{
+            display:flex;
+            justify-content:center;
+            background: linear-gradient(to right,#FF3366, #BA265D);
+            width: 30%;
+            height: 40px;
+            border-radius:20px;
+            a{
+                display:flex;
+                align-self:center;
+                text-decoration:none;
+                color:white;
+            }
+        }
+    }
+}

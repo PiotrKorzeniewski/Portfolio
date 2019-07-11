@@ -1,0 +1,35 @@
+body{
+    background-color:black;
+}
+#wrapper{
+    width:120px;
+}
+.topRow{
+    display:flex;
+    justify-content:space-between;
+}
+.row{
+    display:flex;
+    justify-content:space-around;
+}
+
+#buttonDivide, #buttonMultiply, #buttonSubtract, #buttonAdd{
+    background-color:#ffb84d;
+}
+
+#buttonClear, #buttonExecute{
+    background-color:lightgray;
+}
+
+button{
+    width:60px;
+    border-radius:30px;
+    border:none;
+    margin:1px;
+    background:grey;
+}
+
+#result{
+    width:114.4px;
+    margin:2px;
+}
