@@ -1,10 +1,11 @@
 var isSecond=0;
-var firstNumber=0;
-var secondNumber=0;
+var firstNumber=0.0;
+var secondNumber=0.0;
 var operationNumber=0;
 var operationResult=0;
 var hasDot=false;
 var doubleClicked=false;
+var plusminusNumber=0;
 
 function Resetter(){    //Resets all variables.
     isSecond=0;
@@ -33,19 +34,15 @@ function IfFirstChecker(){  //Prevents OperationExecute() from overriding firstN
 
 function OperationMachine(){ //Heart of the calculator.
     if(isSecond==1||isSecond==2){   //Cleans the input after pressing an operation key.
-        console.log("first "+firstNumber);
         isSecond=2;
         if(operationNumber!=4){
-            if(isSecond==2){
-                document.getElementById('result').value='';
-            }
+            document.getElementById('result').value='';
         }
     }
     if(isSecond==0){    //Activates on first iteration, gets firstNumber.
         if(firstNumber==0){
             firstNumber=parseFloat(document.getElementById('result').value);
         }
-        console.log("first "+firstNumber);
         document.getElementById('result').value='';
         isSecond=1;
     }
@@ -89,19 +86,16 @@ secondNumber=parseFloat(document.getElementById('result').value);
 }
 
 function PlusMinus(){
-        firstNumber=parseFloat(document.getElementById('result').value);
-    if (firstNumber>0||firstNumber<0)
+    plusminusNumber=parseFloat(document.getElementById('result').value);
+    if (plusminusNumber>0||plusminusNumber<0)
     {
-        firstNumber=-firstNumber;
-        console.log(firstNumber);
-        document.getElementById('result').value=firstNumber;
+        plusminusNumber=-plusminusNumber;
+        document.getElementById('result').value=plusminusNumber;
     }
 }
 
 function Float(){
     firstNumber=parseFloat(document.getElementById('result').value);
-    console.log(hasDot);
-    console.log(firstNumber);
     if (hasDot==false)
     {
         if(firstNumber>=0||firstNumber<=0)
