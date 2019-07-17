@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container" id="wrapper">
+    <div class="row">
+        <div class="col-lg-2" id="space-left"></div>
+        <div class="col-lg-8" id="board">
+            <div class="row" id="H">
+                <div class="col-md-2"></div>
+                <div class="col-md-1 btile" id="H1"></div>
+                <div class="col-md-1 wtile" id="H2"></div>
+                <div class="col-md-1 btile" id="H3"></div>
+                <div class="col-md-1 wtile" id="H4"></div>
+                <div class="col-md-1 btile" id="H5"></div>
+                <div class="col-md-1 wtile" id="H6"></div>
+                <div class="col-md-1 btile" id="H7"></div>
+                <div class="col-md-1 wtile" id="H8"></div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row" id="G">
+                <div class="col-md-2"></div>
+                <div class="col-md-1 wtile" id="G1"></div>
+                <div class="col-md-1 btile" id="G2"></div>
+                <div class="col-md-1 wtile" id="G3"></div>
+                <div class="col-md-1 btile" id="G4"></div>
+                <div class="col-md-1 wtile" id="G5"></div>
+                <div class="col-md-1 btile" id="G6"></div>
+                <div class="col-md-1 wtile" id="G7"></div>
+                <div class="col-md-1 btile" id="G8"></div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row" id="F">
+                <div class="col-md-2"></div>
+                <div class="col-md-1 btile" id="F1"></div>
+                <div class="col-md-1 wtile" id="F2"></div>
+                <div class="col-md-1 btile" id="F3"></div>
+                <div class="col-md-1 wtile" id="F4"></div>
+                <div class="col-md-1 btile" id="F5"></div>
+                <div class="col-md-1 wtile" id="F6"></div>
+                <div class="col-md-1 btile" id="F7"></div>
+                <div class="col-md-1 wtile" id="F8"></div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row" id="E">
+                <div class="col-md-2"></div>
+                <div class="col-md-1 wtile" id="E1"></div>
+                <div class="col-md-1 btile" id="E2"></div>
+                <div class="col-md-1 wtile" id="E3"></div>
+                <div class="col-md-1 btile" id="E4"></div>
+                <div class="col-md-1 wtile" id="E5"></div>
+                <div class="col-md-1 btile" id="E6"></div>
+                <div class="col-md-1 wtile" id="E7"></div>
+                <div class="col-md-1 btile" id="E8"></div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row" id="D">
+                <div class="col-md-2"></div>
+                <div class="col-md-1 btile" id="D1"></div>
+                <div class="col-md-1 wtile" id="D2"></div>
+                <div class="col-md-1 btile" id="D3"></div>
+                <div class="col-md-1 wtile" id="D4"></div>
+                <div class="col-md-1 btile" id="D5"></div>
+                <div class="col-md-1 wtile" id="D6"></div>
+                <div class="col-md-1 btile" id="D7"></div>
+                <div class="col-md-1 wtile" id="D8"></div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row" id="C">
+                <div class="col-md-2"></div>
+                <div class="col-md-1 wtile" id="C1"></div>
+                <div class="col-md-1 btile" id="C2"></div>
+                <div class="col-md-1 wtile" id="C3"></div>
+                <div class="col-md-1 btile" id="C4"></div>
+                <div class="col-md-1 wtile" id="C5"></div>
+                <div class="col-md-1 btile" id="C6"></div>
+                <div class="col-md-1 wtile" id="C7"></div>
+                <div class="col-md-1 btile" id="C8"></div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row" id="B">
+                <div class="col-md-2"></div>
+                <div class="col-md-1 btile" id="B1"></div>
+                <div class="col-md-1 wtile" id="B2"></div>
+                <div class="col-md-1 btile" id="B3"></div>
+                <div class="col-md-1 wtile" id="B4"></div>
+                <div class="col-md-1 btile" id="B5"></div>
+                <div class="col-md-1 wtile" id="B6"></div>
+                <div class="col-md-1 btile" id="B7"></div>
+                <div class="col-md-1 wtile" id="B8"></div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row" id="A">
+                <div class="col-md-2"></div>
+                <div class="col-md-1 wtile" id="A1"></div>
+                <div class="col-md-1 btile" id="A2"></div>
+                <div class="col-md-1 wtile" id="A3"></div>
+                <div class="col-md-1 btile" id="A4"></div>
+                <div class="col-md-1 wtile" id="A5"></div>
+                <div class="col-md-1 btile" id="A6"></div>
+                <div class="col-md-1 wtile" id="A7"></div>
+                <div class="col-md-1 btile" id="A8"></div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+        <div class="col-lg-2" id="space-right"></div>
+    </div>
+</div>
+</body>
+</html>

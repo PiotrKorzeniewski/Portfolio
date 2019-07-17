@@ -1,0 +1,13 @@
+#wrapper{
+    background-color: black; 
+}
+.wtile{
+    width:60px;
+    height:60px;
+    background-color: azure;
+}
+.btile{
+    width:60px;
+    height:60px;
+    background-color: rgb(68, 39, 6);
+}
